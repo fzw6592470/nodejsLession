@@ -1,0 +1,148 @@
+@charset "utf-8";
+
+/**
+ * author: MartinCui
+ * name: TraceHub
+ * use: TraceHub
+ **/
+
+
+$color_fff : #fff !default;
+$color_666 : #666 !default;
+$color_222 : #222 !default;
+$color_f4 : #f4f4f4 !default;
+$color_f5 : #f5f5f5 !default;
+$color_945b00 : #945b00 !default;
+$color_f08337 : #f08337 !default;
+$color_999 : #999 !default;
+$color_2CC2E7 : #2CC2E7 !default;
+$color_83b346 : #83b346 !default;
+$color_ccc : #ccc !default;
+$color_eee : #eee !default;
+$color_f7f7f5 : #f7f7f5 !default;
+$color_fafafa : #fafafa !default;
+$color_d4 : #d4d4d4 !default;
+$color_f00: #f00 !default;
+
+@mixin BorderRadius($radius:5px){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin BackgroundImage($color_one:$color_f08337,$color_two:$color_f08337){
+  background-image: -webkit-gradient(linear, center top, center bottom, from($color_one), to($color_one));
+  background-image: -webkit-linear-gradient(top, $color_one, $color_one);
+  background-image: -moz-linear-gradient(top, $color_one, $color_one);
+  background-image: -o-linear-gradient(top, $color_one, $color_one);
+}
+
+.color_red{
+  color: $color_f00 !important;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.fontweight {
+  font-weight: bold;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.tl {
+  text-align: left;
+}
+
+.tc {
+  text-align: center;
+}
+
+.tr {
+  text-align: right;
+}
+
+.clearfix:before, .clear:after {
+  content: ' ';
+  height: 0;
+  display: table;
+  font-size: 0;
+  visibility: hidden;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input {
+  outline: 0 none;
+}
+
+a, a:visited, a:link {
+  color: $color_222;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color_222;
+  text-decoration: none;
+}
+
+*, *:before, *:after {
+  -webkit-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-touch-action: pan-y;
+}
+
+body, html {
+  -ms-overflow-style: none !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: none;
+  font-family: '微软雅黑', 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $color_222;
+  font-size: 62.5%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  background: $color_f7f7f5;
+}
+
+.view {
+  display: block;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+}

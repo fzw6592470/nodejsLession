@@ -1,0 +1,201 @@
+@import "base";
+
+header{
+  width: 100%;
+  height: 3rem;
+  color: $color_fff;
+  background-color: $color_2CC2E7;
+
+  h1{
+    max-width: 960px;
+    height: 3rem;
+    line-height: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    small{
+      font-size: .875rem;
+      font-weight: normal;
+    }
+  }
+}
+
+
+section.search{
+  width: 100%;
+  height: 7rem;
+  border-bottom: 1px solid $color_eee;
+  background-color: $color_fff;
+  box-shadow: 0px 5px 10px rgba(100,100,100,.6);
+
+  div.search-field{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 7rem;
+
+    ul{
+      width: 10%;
+      float: left;
+      height: 5rem;
+      margin-top: 1rem;
+
+      li{
+        width: 100%;
+        height: 2.2rem;
+        line-height: 2.2rem;
+        background-color: $color_ccc;
+        color: $color_fff;
+        text-align: center;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        display: none;
+        float: left;
+      }
+
+      li.active{
+        background-color: $color_2CC2E7 !important;
+      }
+
+      li:last-child{
+        margin-top: .3rem;
+      }
+    }
+
+    .search-area{
+      width: 90%;
+      height: 7rem;
+      float: left;
+      border-left: 1px solid $color_f5;
+      p{
+        width:100%;
+        height:3rem;
+        margin-top: .5rem;
+
+        label{
+          width: auto;
+          padding-left: 2%;
+          padding-right: 2%;
+          height: 2.5rem;
+          line-height: 2.5rem;
+          display: block;
+          float: left;
+          text-align: center;
+        }
+
+        input{
+          width:20%;
+          height:2.5rem;
+          line-height:2.5rem;
+          float: left;
+          border: 1px dashed $color_ccc;
+          padding-left: .5%;
+        }
+
+        input.search-btn{
+          width: 4rem;
+          height: 1.625rem;
+          line-height: 1.625rem;
+          @include BorderRadius();
+          @include BackgroundImage($color_2CC2E7,$color_2CC2E7);
+          border: 1px solid $color_eee;
+          float: right;
+          margin-top: .421875rem;
+          margin-right: 5.8%;
+          color: $color_fff;
+        }
+      }
+    }
+  }
+}
+
+section.trade-hub{
+  max-width: 960px;
+  height: 27.5rem;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:.5rem;
+
+  div.trade-menu{
+    width: 25%;
+    height: 27.5rem;
+    overflow: hidden;
+    background-color: $color_fff;
+    border: 1px solid $color_f5;
+    float:left;
+
+    h2{
+      width:100%;
+      height:2.5rem;
+      line-height: 2.5rem;
+      padding-left:5%;
+      border-bottom: 1px solid $color_f5;
+    }
+
+    div#trade_menu{
+      width:100%;
+      height: 24.9rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+  }
+
+  div.trade-detail {
+    width: 74.5%;
+    height: 27.5rem;
+    overflow: hidden;
+    background-color: $color_fff;
+    border: 1px solid $color_f5;
+    float:left;
+    margin-left: .5%;
+
+    ul{
+      height:27.4rem;
+      li{
+        width:100%;
+        height:1.7125rem;
+        line-height: 1.7125rem;
+        border-bottom:1px solid $color_f5;
+      }
+    }
+    ul.trade-title{
+      width:25%;
+      border-left:1px solid $color_f5;
+      float:left;
+
+      li{
+        padding-right: 15%;
+        text-align: right;
+      }
+    }
+    ul.trade-content{
+      width:75%;
+      border-left:1px solid $color_f5;
+      float:left;
+
+      li{
+        padding-left:3%;
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  height: 2rem;
+  line-height: 2rem;
+  margin-top:1%;
+
+  span{
+    max-width: 960px;
+    height: 2rem;
+    line-height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    background-color: $color_f5;
+    color: $color_ccc;
+  }
+}
